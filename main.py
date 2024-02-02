@@ -22,8 +22,8 @@ import numpy as np
 # In[4]:
 
 
-movies = pd.read_csv("D:/Dataset/tmdb movies/tmdb_5000_movies.csv")
-credits = pd.read_csv("D:/Dataset/tmdb movies/tmdb_5000_credits.csv")
+movies = pd.read_csv("tmdb_5000_movies.csv")
+credits = pd.read_csv("tmdb_5000_credits.csv")
 
 # In[5]:
 
@@ -365,7 +365,7 @@ def recommender(movie):
 # In[139]:
 
 
-# recommender("Spider-Man")
+recommender("Spider-Man")
 
 # Converting the `dataframe` and `cosine similarity matrix` to pickle file which will be utilised for developing a streamlit app.
 
