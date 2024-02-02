@@ -3,8 +3,14 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-movies = pd.read_pickle("movies.pkl")
-similarity = pickle.load(open("similarities.pkl", "rb"))
+
+# movies = pd.read_pickle("movies.pkl")
+# similarity = pickle.load(open("similarities.pkl", "rb"))
+
+from main import new_df, similarity
+
+movies = new_df
+similarity = similarity
 
 
 def fetch_poster(movie_id):
